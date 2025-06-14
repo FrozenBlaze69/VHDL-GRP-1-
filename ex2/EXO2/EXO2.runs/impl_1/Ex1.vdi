@@ -1,0 +1,353 @@
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May 26 14:21:39 2025
+# Process ID         : 12208
+# Current directory  : D:/ex2/EXO2/EXO2.runs/impl_1
+# Command line       : vivado.exe -log Ex1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Ex1.tcl -notrace
+# Log file           : D:/ex2/EXO2/EXO2.runs/impl_1/Ex1.vdi
+# Journal file       : D:/ex2/EXO2/EXO2.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-82VPUES0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16487 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19038 MB
+# Available Virtual  : 5493 MB
+#-----------------------------------------------------------
+source Ex1.tcl -notrace
+Command: open_checkpoint Ex1_physopt.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 318.719 ; gain = 5.727
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 566.039 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 656.863 ; gain = 0.066
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.121 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1243.121 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1243.121 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.121 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1243.121 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 1243.121 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.102 . Memory (MB): peak = 1243.121 ; gain = 10.070
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.121 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:06 ; elapsed = 00:00:14 . Memory (MB): peak = 1243.121 ; gain = 943.754
+Command: route_design
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+
+
+Starting Routing Task
+INFO: [Route 35-254] Multithreading enabled for route_design using a maximum of 2 CPUs
+
+Phase 1 Build RT Design
+Checksum: PlaceDB: 2ada7b5a ConstDB: 0 ShapeSum: 443fe099 RouteDB: a0815c57
+Post Restoration Checksum: NetGraph: 3f67a798 | NumContArr: c2ed027d | Constraints: c2a8fa9d | Timing: c2a8fa9d
+Phase 1 Build RT Design | Checksum: 287a69f4f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1370.117 ; gain = 126.031
+
+Phase 2 Router Initialization
+
+Phase 2.1 Fix Topology Constraints
+Phase 2.1 Fix Topology Constraints | Checksum: 287a69f4f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1370.117 ; gain = 126.031
+
+Phase 2.2 Pre Route Cleanup
+Phase 2.2 Pre Route Cleanup | Checksum: 287a69f4f
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1370.117 ; gain = 126.031
+ Number of Nodes with overlaps = 0
+
+Phase 2.3 Update Timing
+Phase 2.3 Update Timing | Checksum: 2a1f3463b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1382.367 ; gain = 138.281
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.506  | TNS=0.000  | WHS=0.006  | THS=0.000  |
+
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0 %
+  Global Horizontal Routing Utilization  = 0 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 46
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 46
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 2 Router Initialization | Checksum: 23ec7309d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 3 Global Routing
+Phase 3 Global Routing | Checksum: 23ec7309d
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 4 Initial Routing
+
+Phase 4.1 Initial Net Routing Pass
+Phase 4.1 Initial Net Routing Pass | Checksum: 225f831a6
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+Phase 4 Initial Routing | Checksum: 225f831a6
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 5 Rip-up And Reroute
+
+Phase 5.1 Global Iteration 0
+ Number of Nodes with overlaps = 0
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.222  | TNS=0.000  | WHS=N/A    | THS=N/A    |
+
+Phase 5.1 Global Iteration 0 | Checksum: 27cc4f21b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+Phase 5 Rip-up And Reroute | Checksum: 27cc4f21b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 6 Delay and Skew Optimization
+
+Phase 6.1 Delay CleanUp
+Phase 6.1 Delay CleanUp | Checksum: 27cc4f21b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 6.2 Clock Skew Optimization
+Phase 6.2 Clock Skew Optimization | Checksum: 27cc4f21b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+Phase 6 Delay and Skew Optimization | Checksum: 27cc4f21b
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 7 Post Hold Fix
+
+Phase 7.1 Hold Fix Iter
+INFO: [Route 35-416] Intermediate Timing Summary | WNS=7.315  | TNS=0.000  | WHS=0.309  | THS=0.000  |
+
+Phase 7.1 Hold Fix Iter | Checksum: 1a432baa6
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+Phase 7 Post Hold Fix | Checksum: 1a432baa6
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 8 Route finalize
+
+Router Utilization Summary
+  Global Vertical Routing Utilization    = 0.0344415 %
+  Global Horizontal Routing Utilization  = 0.0469807 %
+  Routable Net Status*
+  *Does not include unroutable nets such as driverless and loadless.
+  Run report_route_status for detailed report.
+  Number of Failed Nets               = 0
+    (Failed Nets is the sum of unrouted and partially routed nets)
+  Number of Unrouted Nets             = 0
+  Number of Partially Routed Nets     = 0
+  Number of Node Overlaps             = 0
+
+Phase 8 Route finalize | Checksum: 1a432baa6
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 9 Verifying routed nets
+
+ Verification completed successfully
+Phase 9 Verifying routed nets | Checksum: 1a432baa6
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 10 Depositing Routes
+Phase 10 Depositing Routes | Checksum: 16adbf516
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 11 Post Process Routing
+Phase 11 Post Process Routing | Checksum: 16adbf516
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Phase 12 Post Router Timing
+INFO: [Route 35-57] Estimated Timing Summary | WNS=7.315  | TNS=0.000  | WHS=0.309  | THS=0.000  |
+
+INFO: [Route 35-327] The final timing numbers are based on the router estimated timing analysis. For a complete and accurate timing signoff, please run report_timing_summary.
+Phase 12 Post Router Timing | Checksum: 16adbf516
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+Total Elapsed time in route_design: 20.963 secs
+
+Phase 13 Post-Route Event Processing
+Phase 13 Post-Route Event Processing | Checksum: 18ac71dc4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+INFO: [Route 35-16] Router Completed Successfully
+Ending Routing Task | Checksum: 18ac71dc4
+
+Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 144.613
+
+Routing Is Done.
+INFO: [Common 17-83] Releasing license: Implementation
+21 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+route_design completed successfully
+route_design: Time (s): cpu = 00:00:12 ; elapsed = 00:00:21 . Memory (MB): peak = 1388.699 ; gain = 145.578
+INFO: [Vivado 12-24828] Executing command : report_drc -file Ex1_drc_routed.rpt -pb Ex1_drc_routed.pb -rpx Ex1_drc_routed.rpx
+Command: report_drc -file Ex1_drc_routed.rpt -pb Ex1_drc_routed.pb -rpx Ex1_drc_routed.rpx
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VHDL/Vivado/2024.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file D:/ex2/EXO2/EXO2.runs/impl_1/Ex1_drc_routed.rpt.
+report_drc completed successfully
+INFO: [Vivado 12-24828] Executing command : report_methodology -file Ex1_methodology_drc_routed.rpt -pb Ex1_methodology_drc_routed.pb -rpx Ex1_methodology_drc_routed.rpx
+Command: report_methodology -file Ex1_methodology_drc_routed.rpt -pb Ex1_methodology_drc_routed.pb -rpx Ex1_methodology_drc_routed.rpx
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [DRC 23-133] Running Methodology with 2 threads
+INFO: [Vivado_Tcl 2-1520] The results of Report Methodology are in file D:/ex2/EXO2/EXO2.runs/impl_1/Ex1_methodology_drc_routed.rpt.
+report_methodology completed successfully
+INFO: [Vivado 12-24828] Executing command : report_timing_summary -max_paths 10 -report_unconstrained -file Ex1_timing_summary_routed.rpt -pb Ex1_timing_summary_routed.pb -rpx Ex1_timing_summary_routed.rpx -warn_on_violation 
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+INFO: [Vivado 12-24838] Running report commands "report_incremental_reuse, report_route_status" in parallel.
+Running report generation with 2 threads.
+INFO: [Vivado 12-24828] Executing command : report_route_status -file Ex1_route_status.rpt -pb Ex1_route_status.pb
+INFO: [Vivado 12-24828] Executing command : report_incremental_reuse -file Ex1_incremental_reuse_routed.rpt
+INFO: [Vivado_Tcl 4-1062] Incremental flow is disabled. No incremental reuse Info to report.
+INFO: [Vivado 12-24828] Executing command : report_power -file Ex1_power_routed.rpt -pb Ex1_power_summary_routed.pb -rpx Ex1_power_routed.rpx
+Command: report_power -file Ex1_power_routed.rpt -pb Ex1_power_summary_routed.pb -rpx Ex1_power_routed.rpx
+Running Vector-less Activity Propagation...
+
+Finished Running Vector-less Activity Propagation
+40 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+report_power completed successfully
+INFO: [Vivado 12-24828] Executing command : report_clock_utilization -file Ex1_clock_utilization_routed.rpt
+INFO: [Vivado 12-24828] Executing command : report_bus_skew -warn_on_violation -file Ex1_bus_skew_routed.rpt -pb Ex1_bus_skew_routed.pb -rpx Ex1_bus_skew_routed.rpx
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+generate_parallel_reports: Time (s): cpu = 00:00:05 ; elapsed = 00:00:07 . Memory (MB): peak = 1499.730 ; gain = 111.031
+INFO: [Timing 38-480] Writing timing data to binary archive.
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1499.730 ; gain = 0.000
+Wrote PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1499.730 ; gain = 0.000
+Wrote PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1499.730 ; gain = 0.000
+Writing XDEF routing.
+Writing XDEF routing logical nets.
+Writing XDEF routing special nets.
+Wrote RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.017 . Memory (MB): peak = 1499.730 ; gain = 0.000
+Wrote Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1499.730 ; gain = 0.000
+Wrote Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1499.730 ; gain = 0.000
+Write Physdb Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.044 . Memory (MB): peak = 1499.730 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'D:/ex2/EXO2/EXO2.runs/impl_1/Ex1_routed.dcp' has been generated.
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 14:22:25 2025...
+#-----------------------------------------------------------
+# Vivado v2024.2 (64-bit)
+# SW Build 5239630 on Fri Nov 08 22:35:27 MST 2024
+# IP Build 5239520 on Sun Nov 10 16:12:51 MST 2024
+# SharedData Build 5239561 on Fri Nov 08 14:39:27 MST 2024
+# Start of session at: Mon May 26 14:23:00 2025
+# Process ID         : 1648
+# Current directory  : D:/ex2/EXO2/EXO2.runs/impl_1
+# Command line       : vivado.exe -log Ex1.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source Ex1.tcl -notrace
+# Log file           : D:/ex2/EXO2/EXO2.runs/impl_1/Ex1.vdi
+# Journal file       : D:/ex2/EXO2/EXO2.runs/impl_1\vivado.jou
+# Running On         : LAPTOP-82VPUES0
+# Platform           : Windows Server 2016 or Windows 10
+# Operating System   : 22631
+# Processor Detail   : AMD Ryzen 5 5600H with Radeon Graphics         
+# CPU Frequency      : 3294 MHz
+# CPU Physical cores : 6
+# CPU Logical cores  : 12
+# Host memory        : 16487 MB
+# Swap memory        : 2550 MB
+# Total Virtual      : 19038 MB
+# Available Virtual  : 5264 MB
+#-----------------------------------------------------------
+source Ex1.tcl -notrace
+Command: open_checkpoint Ex1_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.073 . Memory (MB): peak = 318.883 ; gain = 5.621
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 565.594 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 656.535 ; gain = 0.141
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.754 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1243.754 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1243.754 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.754 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1243.754 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 1243.754 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.091 . Memory (MB): peak = 1243.754 ; gain = 7.254
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1243.754 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.2 (64-bit) build 5239630
+open_checkpoint: Time (s): cpu = 00:00:05 ; elapsed = 00:00:15 . Memory (MB): peak = 1243.754 ; gain = 943.027
+Command: write_bitstream -force Ex1.bit
+Attempting to get a license for feature 'Implementation' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Implementation' and/or device 'xc7a35t'
+Running DRC as a precondition to command write_bitstream
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/VHDL/Vivado/2024.2/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado 12-3199] DRC finished with 0 Errors
+INFO: [Vivado 12-3200] Please refer to the DRC report (report_drc) for more information.
+INFO: [Designutils 20-2272] Running write_bitstream with 2 threads.
+Loading data files...
+Loading site data...
+Loading route data...
+Processing options...
+Creating bitmap...
+Creating bitstream...
+Writing bitstream ./Ex1.bit...
+INFO: [Vivado 12-1842] Bitgen Completed Successfully.
+INFO: [Project 1-1876] WebTalk data collection is mandatory when using a ULT device. To see the specific WebTalk data collected for your design, open the usage_statistics_webtalk.html or usage_statistics_webtalk.xml file in the implementation directory.
+INFO: [Common 17-83] Releasing license: Implementation
+23 Infos, 0 Warnings, 0 Critical Warnings and 0 Errors encountered.
+write_bitstream completed successfully
+write_bitstream: Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1790.141 ; gain = 546.387
+INFO: [Common 17-206] Exiting Vivado at Mon May 26 14:23:31 2025...
